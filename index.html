@@ -1,0 +1,25 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+        - pandas
+        - matplotlib    
+    </py-env>
+</head>
+<body>
+<py-script>
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.DataFrame({
+    'name':[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+    'age':[43,19,17,75,45,77,50,10,70,50,1,2,3,4,5,6,7,8,9,0]})
+
+fig, ax = plt.subplots()
+ax.bar(df['name'], df['age'], color='pink')
+plt
+
+</py-script>
+</body>
+</html>
